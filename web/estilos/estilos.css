@@ -1,0 +1,353 @@
+:root {
+    --color-principal: #A3D9A5;
+    --color-secundario: #B3E5FC;
+    --color-cta: #FFCC80;
+    --color-fondo: #F5F5F5;
+    --color-texto: #424242;
+    --color-blanco: #FFFFFF;
+    --color-nav:rgb(0,40,67);
+}
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.barraNavegacion {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--color-nav);
+    padding: 10px 20px;
+}
+.titulo-pagina a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 24px;
+}
+
+.Menu-barra-navegacion {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row; /* Asegura que los elementos se dispongan en fila */
+}
+
+.elemento-barra {
+    margin-left: 20px;
+}
+
+.elemento-barra a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.elemento-barra a:hover {
+    color: #ddd;
+}
+
+.index-body{
+    background-image: url("../imagenes/fondo_veterinaria.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    align-content: center;
+}
+.index-body::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 80%, rgba(255, 255, 255, 1) 100%);
+    pointer-events: none; /* Permite que los elementos debajo sean interactivos */
+}
+.padre{
+    display: flex;
+    align-items: center; /* Centra verticalmente */
+    margin-top: 5%;
+    justify-content: center;    
+}
+.contenedor-Texto{
+    background-color: rgba(0,40,67, 0.3); 
+    width: 500px;
+    height: 270px;
+    color: white; 
+    padding: 20px;
+    border-radius: 30pt;
+    button{
+        margin-left: 30%;
+        }
+}
+.controles-inicio-sesion{
+display: flex;
+}
+#mensajeErrorLado{
+    text-align: end;
+    font-size: 25px;
+}
+.inicio-sesion{
+    display: block;
+    background-color: rgba(0,40,67, 0.3); 
+    width: 500px;
+    height: 270px;
+    padding: 20px;
+    border-radius: 30pt;
+    p{
+        display: flex;
+        justify-content: center;
+    }
+    .contenedor-Correo{
+        margin-left: 45px;
+    }
+    h1{
+        display: flex;
+        justify-content: center ;}
+    .boton{
+        margin-left: 35%;
+        }
+}
+.login-body{
+    background-image: url("../imagenes/fondo_login.jpg");
+
+}
+.cliente-body{
+    background-image: url("../imagenes/fondo_cliente.jpg");
+}
+.mascotas-body{
+    background-image: url("../imagenes/fondo_mascota.jpg");
+}
+.servicios-body{
+    background-image: url("../imagenes/fondo_Servicios.jpg");
+}
+.michican-body{
+    background-image: url("../imagenes/fondo_Michican.jpeg");
+}
+.contacto-body{
+    background-image: url("../imagenes/fondo_Contacto.jpg");
+}
+.registro-body{
+    background-image: url("../imagenes/fondo_registro.jpg");
+}
+.historial-body{
+    background-image: url("../imagenes/fondo_historial.jpg");
+}
+.registro-mascotas-body{
+    background-image: url("../imagenes/fondo_RegMascotas.jpg");
+}
+.citas-body{
+    background-image: url("../imagenes/fondo_citas.jpg");
+}
+.mascotas-body,.citas-body,.cliente-body,.login-body,.servicios-body,.michican-body,.registro-body,.historial-body,.registro-mascotas-body{
+    background-size: cover;
+    background-repeat: no-repeat;
+    align-content: center;
+}
+button,.boton{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    background-color: var(--color-nav);
+    border-radius: 30pt;
+    padding: 10px;
+    color: var(--color-blanco);
+    border: transparent;
+}
+.mascotas-contenedor{
+    display: block;
+    background-color: rgba(0, 40, 67, 0.5); 
+    width: 500px;
+    height: fit-content;
+    padding: 20px;
+    border-radius: 30pt;
+    color: var(--color-blanco);
+}
+.info-Mascota{
+    display: block;
+    background-color: rgba(8, 118, 133, 0.637); 
+    width: 550px;
+    height: fit-content;
+    padding: 20px;
+    border-radius: 30pt;
+    border-color: #424242;
+    color: var(--color-blanco);
+    h3{
+        text-align: center;
+        font-size: 25px;
+    }
+}
+.mascotas-registradas-estilo{
+    display: block;
+    background-color: rgba(38, 136, 202, 0.5); 
+    width: 460px;
+    height: fit-content;
+    padding: 20px;
+    border-radius: 30pt;
+    border-color: #424242;
+    color: var(--color-blanco);
+    h3{
+        text-align: center;
+        font-size: 25px;
+    }
+    button{
+        margin-left: 40%;
+    }
+}
+.servicios-contenedor{
+    display: block;
+    background-color: rgba(4, 147, 243,0.5); 
+    width: 520px;
+    height: 450px;
+    padding: 20px;
+    border-radius: 5pt;
+    color: var(--color-blanco);
+    overflow: auto;
+}
+.servicios-registrados-estilo{
+    display: block;
+    background-color: rgba(9, 236, 160, 0.925); 
+    width: 460px;
+    height: fit-content;
+    padding: 20px;
+    border-radius: 30pt;
+    border-color: #424242;
+    color: var(--color-blanco);
+    h3{
+        text-align: center;
+        font-size: 25px;
+    }
+}
+
+.historial-contenedor{
+    display: block;
+    background-color: rgba(76, 4, 243, 0.5); 
+    width: 520px;
+    height: 450px;
+    padding: 20px;
+    border-radius: 5pt;
+    color: var(--color-blanco);
+    overflow: auto;
+}
+.historial-registrado-estilo{
+    display: block;
+    background-color: rgba(9, 134, 236, 0.925); 
+    width: 460px;
+    height: fit-content;
+    padding: 20px;
+    border-radius: 30pt;
+    border-color: #424242;
+    color: var(--color-blanco);
+    h3{
+        text-align: center;
+        font-size: 25px;
+    }
+}
+.contenedor-Info-Michican{
+    background-color: rgba(23, 105, 160, 0.671); 
+    width: 1100px;
+    height: fit-content;
+    color: white; 
+    padding: 20px;
+    border-radius: 30pt;
+    h1{
+        text-align: center;
+    }
+}
+.contenedor-Contacto{
+    background-color: rgba(14, 52, 223, 0.733); 
+    width: 1050px;
+    height: fit-content;
+    color: white; 
+    padding: 20px;
+    border-radius: 30pt;
+    
+}
+.Contenedor-Registro{
+    display: block;
+    background-color: rgba(0,40,67, 0.3); 
+    width: 500px;
+    height: fit-content;
+    padding: 20px;
+    border-radius: 30pt;
+    p{
+        display: flex;
+        justify-content: right;
+        margin-right: 25%;
+    }
+    .contenedor-Correo{
+        margin-left: 45px;
+    }
+    h1{
+        display: flex;
+        justify-content: center ;}
+    .boton{
+        margin-left: 35%;
+        }
+    
+
+}
+.contenido{
+    display: flex;
+    justify-content: center;
+}
+button:hover{
+background-color: royalblue;
+    
+}
+.boton:hover{
+    background-color: royalblue;
+}
+#esqueleto-Inicio{
+    align-content: center;
+    color: var(--color-blanco);
+    #encabezado-Inicio{
+        text-align: center;
+    }
+}
+p,h1,h2,h3 {
+    font-family: Arial, Helvetica, sans-serif;
+}
+p{
+    font-size: 20px;
+}
+h1{
+    font-size: 40px;
+}
+#mensaje-error{
+    text-align: center;
+}
+.encabezado{
+
+    color: var(--color-blanco);
+}
+.contenedor-controles{
+    display: flex;
+    justify-content: center;
+    button{
+        margin-right: 10px;
+    }
+}
+.contenedor-tablas{
+    table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 6px;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+    }
+    .hidden {
+            display: none;
+        }
+.controles-Tablas{
+    h2{
+        text-align: center;
+    }
+    padding: 15px;
+}
